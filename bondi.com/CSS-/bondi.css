@@ -1,0 +1,336 @@
+:root{
+    --main-color: rgb(27, 41, 68);
+    --btn-color: rgb(205, 48, 74);
+    --aqua-color: rgba(187, 211, 239, 0.184);
+    --green-color: rgb(19, 157, 19);
+    --yellow-color: rgb(255, 187, 0);
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.navbar{
+    background-color: var(--main-color);
+}
+nav a img{
+    width: 100px;
+}
+.navbar .navbar-toggle{
+    border-color: white;
+    color: white;
+}
+.navbar .navbar-toggle:focus{
+    box-shadow: none;
+}
+.navbar .navbar-toggle[aria-expanded="true"]{
+    border-color: var(--green-color);
+}
+.navbar div a,
+.navbar ul li a {
+    color: white;
+}
+.navbar ul li a.active,
+.navbar ul li a:focus,
+.navbar ul li a:hover{
+    color: var(--green-color);
+}
+.navbar .search{
+    border-left: 1px solid var(--green-color);
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.navbar .search svg{
+    color: var(--green-color);
+}
+.creativity {
+    background-color: var(--main-color);
+    width: 100%;
+    min-height: 350px;
+}
+.creativity .container h1{
+    color: white;
+    font-size: 40px;
+}
+.creativity .lead{
+    margin-top: -5px;
+    color: white;
+    font-size: 13px;
+}
+.navbar button,
+.creativity button,
+.categories button.more,
+.retina-designs .retina-text button,
+.start .container button,
+.blog button,
+.subscribe button,
+.footer button{
+    background-color: var(--btn-color);
+    border-radius: 20px;
+    padding: 8px 40px;
+    color: white;
+    font-size: 13px;
+    color: rgb(244, 182, 90);
+}
+.stuff h4,
+.categories h4,
+.blog h4{
+    font-weight: 600;
+}
+.stuff img,
+.some-stuff .title img,
+.blog img{
+    width: 170px;
+    margin-bottom: 25px;
+}
+.stuff .lead,
+.categories .lead,
+.blog .lead{
+    font-size: 13px;
+}
+.stuff hr{
+    width: 16%;
+    margin: auto;
+    color: var(--aqua-color);
+}
+.features{
+    margin-bottom: 30px;
+}
+.feat{
+    width: 70%;
+    margin: auto;
+}
+.features h4,
+.company .team .employee h4{
+    font-size: 20px;
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+.features .lead{
+    font-size: 15px;
+}
+.features img{
+    width: 100px;
+}
+.features .imgg{
+    width: 120px;
+    margin-top: 7px;
+}
+.categories{
+    background-color: var(--aqua-color);
+    padding-top: 10px;
+    padding-bottom: 40px;
+}
+.categories .logo img{
+    width: 195px;
+}
+.categories .choice{
+    width: 100%;
+}
+.categories .row button{
+    color: rgb(186, 182, 182);
+    width: fit-content;
+}
+.categories button:focus{
+    border-color: transparent;
+    background-color: var(--btn-color);
+    box-shadow: none;
+}
+.categories .chick{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.categories img{
+    width: 100%;
+    margin-bottom: 22px;
+}
+.some-stuff .title,
+.company .meet {
+    width: 50%;
+    margin: auto;
+}
+.some-stuff .title p,
+.company .meet p{
+    font-size: 15px;
+}
+.retina-designs{
+    padding-top: 40px;
+    width: 80%;
+    height: fit-content;
+    margin: auto;
+    overflow: hidden;
+}
+.retina-designs .retina-text{
+    width: 35%;
+    align-self: center;
+}
+.retina-designs .retina-text p,
+.start p,
+.blog .stories .story p,
+.company .team .employee p{
+    font-size: 15px;
+}
+.retina-designs .retina-image {
+    width: 60%}
+.retina-designs .retina-image img{
+    width: 100%;
+}
+.retina-designs .retina-text h4{
+    font-size: 20px;
+    font-weight: 600;
+}
+.our-clients{
+    height: 90px;
+}
+.our-clients img{
+    width: 100px;
+    margin-right: 40px;
+    opacity: .6;
+    transition: scale .7s ease-in-out;
+}
+.our-clients img:hover{
+    opacity: 1;
+    transform: scale(1.1,1.1);
+    transition-duration: .5s;
+}
+.start{
+    background-color: var(--main-color);
+    color:white;
+    min-height: 300px;
+}
+.start button{
+    margin-top: 20px;
+}
+.start h2{
+    font-size: 28px;
+}
+.blog .stories{
+    width: 80%;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+.blog .stories .story{
+    width: 30%;
+}
+.blog .stories .story img{
+    width: 100%;
+    max-height: 120px;
+    margin-bottom: 10px;
+}
+.blog .stories .story h4{
+    font-size: 14px;
+}
+.some-stuff .title img,
+.blog img{
+    margin-top: 35px;
+}
+.company {
+    background-color: var(--aqua-color);
+    min-height: 570px;
+}
+.company .team{
+    width: 80%;
+    margin: auto;
+}
+.company .team .employee{
+    width: 20%;
+    overflow: hidden;
+    position: relative;
+}
+.company .meet{
+    padding-top: 80px;
+    padding-bottom: 40px;
+}
+.company .meet p{
+    font-size: 13px;
+}
+.company .meet h4{
+    font: 40px;
+    font-weight: 600;
+
+}
+
+/*.company .team .employee::after{
+    content: "Zed";
+    position: absolute;
+    width: 100%;
+    height: 40px;
+    background-color: rgba(61, 203, 193, 0.664);
+    text-align: center;
+    top: 59.9%;
+    line-height: 40px;
+    color: white;
+}*/
+.company .team .employee img{
+    width: 100%;
+}
+.company .team .employee p{
+    font-size: 12px;
+    padding-top: 15px;
+}
+.subscribe{
+    background-color: var(--yellow-color);
+    margin-top: 40px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.subscribe label{
+    color: var(--main-color);
+}
+.subscribe input[type="email"]{
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+    color: white;
+}
+.subscribe input[type="email"]::placeholder{
+    color: white;
+    font-size: 14px;
+}
+.subscribe button{
+    background-color: var(--main-color);
+}
+.footer{
+   background-color: var(--main-color);
+}
+.footer button{
+    color: white;
+    width: 100%;
+}
+.footer img{
+    width: 25%;
+    margin-top: 40px;
+    margin-bottom: 25px;
+}
+.footer p{
+    font-size: 15px;
+    margin-bottom: 35px;
+}
+.footer p span{
+    color: var(--green-color);
+}
+.footer p .span-2{
+    color: var(--yellow-color);
+}
+.footer ul li h6,
+.footer h5{
+
+    margin-top: 60px;
+    margin-bottom: 16px;
+    font-size: 16px;
+}
+.footer ul li{
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+.footer p.contact{
+    margin-bottom: 25px;
+}
+.footer .image{
+    width: 8%;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+.footer img{
+    cursor: pointer;
+}
